@@ -3,7 +3,7 @@ def main():
 
 
 def check_matrices_validity():
-    print(" Enter the dimensions of the two matrices.\n Format: rows of matrix 1, col2 of matrix 2, rows of matrix 2, cols of matrix 2")
+    print(" Enter the dimensions of the two matrices.\n Format: rows of matrix 1, cols of matrix 1, rows of matrix 2, cols of matrix 2")
     print(" Sample input for multiplying a 2x3 matrix with a 3x2: 2 3 3 2 ")
     while True:
         try:
