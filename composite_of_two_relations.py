@@ -1,5 +1,3 @@
-#no input validation yet
-
 def main():
 	print(" Input the relations. Format: {(a,b),(b,c),(c,d)} - NO SPACES! \n")
 	first_rel = get_first_relation()
