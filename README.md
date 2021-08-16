@@ -1,5 +1,5 @@
 # Discrete-Math-Tools
-*--IN PROGRESS--*
+*-- IN PROGRESS --*
 A collection of tools for solving simple Discrete Math problems.
 Includes the following:
   - Boolean Product of Matrices Calculator
@@ -8,4 +8,4 @@ Includes the following:
 
 
 
-*--WILL REFACTOR SOON ⊂(◉‿◉) --*
+*-- WILL REFACTOR SOON ⊂(◉‿◉) --*
