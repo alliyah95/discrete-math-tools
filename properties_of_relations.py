@@ -2,13 +2,12 @@ from compose_a_relation_with_itself import get_relation
 
 def main():
     user_set = get_main_set()
-    print("Enter the relation:")
+    print("Input the relation:")
     relation = get_relation()
 
-    if is_reflexive(user_set, relation):
-        print("The relation is reflexive.")
-    else:
-        print("The relation is not reflexive")
+    print("\nProperties of the relation")
+    print("-Reflexive" if is_reflexive(user_set, relation) else "-Not reflexive")
+    print("-Symmetric" if is_symmetric(relation) else "-Not symmetric")
 
 def get_main_set():
     main_set = set({})
@@ -18,11 +17,12 @@ def get_main_set():
     return main_set
 
 def is_reflexive(main_set, relation):
-    to_compare = [tuple((element, element)) for element in main_set]
-    return all(element in relation for element in to_compare)
+    to_compare = [(element, element) for element in main_set]
+    return all(pair in relation for pair in to_compare)
 
-def is_symmetric():
-    pass
+def is_symmetric(relation):
+    to_compare = [(pair[1],pair[0]) for pair in relation]
+    return all(pair in relation for pair in to_compare)
 
 def is_anti_symmetric():
     pass
