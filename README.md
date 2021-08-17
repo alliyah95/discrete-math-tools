@@ -1,4 +1,4 @@
-# Discrete-Math-Tools
+# Discrete Math Tools
 *-- IN PROGRESS --*
 A collection of tools for solving simple Discrete Math problems.
 Includes the following:
