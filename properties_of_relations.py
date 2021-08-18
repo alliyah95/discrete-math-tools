@@ -2,12 +2,13 @@ from compose_a_relation_with_itself import get_relation
 
 def main():
     user_set = get_main_set()
-    print("Input the relation:")
+    print("\nInput the relation")
     relation = get_relation()
 
     print("\nProperties of the relation")
     print("-Reflexive" if is_reflexive(user_set, relation) else "-Not reflexive")
     print("-Symmetric" if is_symmetric(relation) else "-Not symmetric")
+    print("-Anti-symmetric" if is_anti_symmetric(relation) else "-Not Anti-symmetric")
 
 def get_main_set():
     main_set = set({})
@@ -24,8 +25,13 @@ def is_symmetric(relation):
     to_compare = [(pair[1],pair[0]) for pair in relation]
     return all(pair in relation for pair in to_compare)
 
-def is_anti_symmetric():
-    pass
+def is_anti_symmetric(relation):
+    if len(relation) == 1:
+        return True
+    else:
+        to_compare = [(pair[1],pair[0]) for pair in relation]
+        if not all(pair in relation for pair in to_compare):
+            return True
 
 def is_transitive():
     pass
