@@ -41,6 +41,16 @@ def is_anti_symmetric(relation):
         return True
 
 def is_transitive():
-    pass
+    if len(relation) == 1:
+        return True
+    else:
+        for pair1 in relation:
+            to_compare = [pair2 for pair2 in relation if pair2[0] == pair1[1]]
+            for pair3 in to_compare:
+                if (pair1[0],pair3[1]) in relation:
+                    continue
+                else:
+                    return False
+    return True
 
 main()
