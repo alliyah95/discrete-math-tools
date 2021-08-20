@@ -34,7 +34,6 @@ def is_anti_symmetric(relation):
                 if pair[1] == pair[0]:
                     continue
                 else:
-                    print(False)
                     return False
             else:
                 continue
