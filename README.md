@@ -7,5 +7,3 @@ Includes the following:
   - Properties of a Relation Tool
 
 
-
-*-- WILL REFACTOR SOON ⊂(◉‿◉) --*
