@@ -17,17 +17,17 @@ def check_matrices_validity():
                 print(" Enter numeric values only!")
             else:
                 if dimensions[1] == dimensions[2] and all(int(num) > 0 for num in dimensions):
-                    matrix_one = get_matrix_one(row1, col1)
-                    matrix_two = get_matrix_two(row2, col2)
+                    matrix_one = get_matrix(row1, col1)
+                    matrix_two = get_matrix(row2, col2)
                     multiply_matrices(matrix_one, matrix_two, row1, col2)
                     break
                 else:
                     print(" The matrices cannot be multiplied.\n The number of columns of matrix 1 must be equal to the number of rows of matrix 2.\n Values must be greater than 0.")
 
 
-def get_matrix_one(num_rows, num_cols):
+def get_matrix(num_rows, num_cols):
     row_ctr = 0
-    matrix_one = []
+    matrix = []
     valid_length = True
     valid_values = True
 
@@ -48,7 +48,7 @@ def get_matrix_one(num_rows, num_cols):
 
         if valid_length and valid_values:
             row_ctr+=1
-            matrix_one.append([int(value) for value in row])
+            matrix.append([int(value) for value in row])
         else:
             if not valid_values:
                 print(" The matrix can only contain zeroes or ones.")
@@ -58,43 +58,7 @@ def get_matrix_one(num_rows, num_cols):
                 print(f" The length of each row must be equal to {num_cols}.")
                 valid_length = True
 
-    return matrix_one
-
-
-def get_matrix_two(num_rows, num_cols):
-    row_ctr = 0
-    matrix_two = []
-    valid_length = True
-    valid_values = True
-
-    print("\n Input each row of the second matrix. Separate each value with a space.\n Sample input: 0 0 0 0 1 0 ")
-    while row_ctr != int(num_rows):
-        print(f"\n Row {row_ctr+1}: ")
-        row = input(" ").split()
-
-        if len(row) != int(num_cols):
-            valid_length = False
-
-        for ele in row:
-            if ele == '0' or ele == '1':
-                continue
-            else:
-                valid_values = False
-                break
-
-        if valid_length and valid_values:
-            row_ctr+=1
-            matrix_two.append([int(value) for value in row])
-        else:
-            if not valid_values:
-                print(" The matrix can only contain zeroes or ones.")
-                valid_values = True
-
-            if not valid_length:
-                print(f" The length of each row must be equal to {num_cols}.")
-                valid_length = True
-
-    return matrix_two
+    return matrix
 
 
 def multiply_matrices(matrix_one, matrix_two, product_row, product_col):
