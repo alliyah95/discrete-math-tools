@@ -1,11 +1,13 @@
 # Discrete Math Tools
+A collection of tools for solving simple Discrete Math prolems.
 
-A collection of tools for solving simple Discrete Math problems.
 ---
 
-Includes the following:
-  - Boolean Product of Matrices Calculator
-  - Composite of Relations Calculator
-  - Properties of a Relation Tool
+## Includes the following:
+1. relation-related tools
+    - properties of a relation
+    - composite of relations
+2. matrix-related tools
+    - boolean product of two matrices
 
 
