@@ -4,10 +4,24 @@ A collection of tools for solving simple Discrete Math prolems.
 ---
 
 ## Includes the following:
-1. relation-related tools
-    - properties of a relation
-    - composite of relations
-2. matrix-related tools
-    - boolean product of two matrices
+### Relation-Related Tools
+1. properties of a relation
+2. composite of relations
+
+### Matrix-Related Tools
+1. boolean product of two matrices
+
+
+---
+## Instructions
+- *To input a relation {(a,b),(b,c),(c,d)}*
+<pre><code> >> (a,b),(b,c),(c,d)
+</code></pre>
+
+- *To input a set {a,b,c,d}*
+<pre><code> >> a b c d
+</code></pre>
+
+
 
 
