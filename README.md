@@ -13,7 +13,7 @@ A collection of tools for solving simple Discrete Math prolems.
 
 
 ---
-## Instructions
+## Usage
 - *To input a relation {(a,b),(b,c),(c,d)}*
 <pre><code> >> (a,b),(b,c),(c,d)
 </code></pre>
