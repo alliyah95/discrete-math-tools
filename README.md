@@ -11,6 +11,8 @@ A collection of tools for solving simple Discrete Math prolems.
 ### Matrix-Related Tools
 1. boolean product of two matrices
 
+### Algorithms
+1. Havel-Hakimi
 
 ---
 ## Usage
