@@ -1,5 +1,5 @@
 # Discrete Math Tools
-A collection of tools for solving simple Discrete Math prolems.
+A collection of tools for simple Discrete Math topics.
 
 ---
 
