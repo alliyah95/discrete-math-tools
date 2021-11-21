@@ -25,10 +25,4 @@ A collection of tools for simple Discrete Math topics.
 </code></pre>
 
 ---
-TODO:
-- matrix invertibility checker
-- matrix type checker
-- logical equivalence tool
-- functions tool
-- sigma and pi notation tool
 
